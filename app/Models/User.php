@@ -18,9 +18,21 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'referral_code',
         'name',
         'email',
         'password',
+        'phone',
+        'birth_date',
+        'gender',
+        'pancard',
+        'state',
+        'city',
+        'bank_name',
+        'account_no',
+        'ifsc_code',
+        'pincode',
+        'address',
     ];
 
     /**
@@ -42,4 +54,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+
 }
